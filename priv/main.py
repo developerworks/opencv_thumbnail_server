@@ -5,7 +5,7 @@ import numpy as np
 import cv2
 # from skimage import io
 # from erlport import encode
-import opencv_thumbnail as ot
+# import opencv_thumbnail as ot
 
 def load_image_url(url):
     resp = urllib.urlopen(url)
