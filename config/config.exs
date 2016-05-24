@@ -1,6 +1,12 @@
 
 use Mix.Config
 
+config :logger, :console,
+  level: :debug,
+  format: "$date $time $metadata[$level] $message\n",
+  handle_sasl_reports: true,
+  handle_otp_reports: true
+
 config :opencv_thumbnail_server, settings: [
   # Shoud not be the system python in OSX
   {:python, '/usr/local/bin/python'},
