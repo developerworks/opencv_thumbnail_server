@@ -1,3 +1,4 @@
+require Logger
 defmodule OpencvThumbnailServer.Worker do
   use GenServer
   @config Application.get_env(:opencv_thumbnail_server, :settings)
@@ -12,7 +13,8 @@ defmodule OpencvThumbnailServer.Worker do
   end
 
   def init(python_module) do
-    IO.puts "Start worker"
+    Logger.info "Start worker"
+    Logger.debug "Configs #{inspect @config}"
     {:ok, pid} = :python.start_link([
       {:python_path, @config[:python_path]},
       {:python, @config[:python]}
