@@ -3,7 +3,11 @@
 
 ```
 worker = :poolboy.checkout(:opencv_thumbnail_server_pool)
-data = OpencvThumbnailServer.Worker.call_python(worker, :load_image_url, ["http://ww3.sinaimg.cn/mw690/6941baebgw1epzcuv9vmxj20me0hy0u1.jpg"])
+data = OpencvThumbnailServer.Worker.call_python(
+  worker,
+  :load_image_url,
+  ["http://ww3.sinaimg.cn/mw690/6941baebgw1epzcuv9vmxj20me0hy0u1.jpg"]
+)
 File.write("/tmp/6941baebgw1epzcuv9vmxj20me0hy0u1.jpg", data)
 :poolboy.checkin(:opencv_thumbnail_server_pool, worker)
 ```
