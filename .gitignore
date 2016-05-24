@@ -5,3 +5,4 @@ erl_crash.dump
 *.ez
 /rel
 *.py[cod]
+scp
