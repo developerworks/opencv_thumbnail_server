@@ -10,7 +10,8 @@ defmodule OpencvThumbnailServer.Api do
 
   def load_image_url(url) do
     worker = :poolboy.checkout(:opencv_thumbnail_server_pool)
-    Worker.call_python(worker, :load_image_url, [url])
+    image_bin = Worker.call_python(worker, :load_image_url, [url])
     :poolboy.checkin(:opencv_thumbnail_server_pool, worker)
+    image_bin
   end
 end
