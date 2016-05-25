@@ -15,7 +15,7 @@ defmodule OpencvThumbnailServer.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     dev_packages = Mix.env == :dev && [:exsync, :apex] || []
-    [applications: [:logger, :poolboy, :erlport] ++ dev_packages,
+    [applications: [:logger, :poolboy, :erlport, :edeliver] ++ dev_packages,
      mod: {OpencvThumbnailServer, []}]
   end
 
@@ -34,7 +34,8 @@ defmodule OpencvThumbnailServer.Mixfile do
       {:erlport, github: "hdima/erlport"},
       {:exsync, "~> 0.1.2", only: [:dev]},
       {:apex, "~> 0.4.0", only: [:dev]},
-      {:exrm, "~> 1.0.4"}
+      {:exrm, "~> 1.0.4"},
+      {:edeliver, ">= 1.2.7"}
     ]
   end
 end

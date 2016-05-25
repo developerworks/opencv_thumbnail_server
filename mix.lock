@@ -1,6 +1,7 @@
 %{"apex": {:hex, :apex, "0.4.0", "85048fd201a06d3427d5c607d22f080a52473d737343afd0c427f9bb64239af5", [:mix], []},
   "bbmustache": {:hex, :bbmustache, "1.0.4", "7ba94f971c5afd7b6617918a4bb74705e36cab36eb84b19b6a1b7ee06427aa38", [:rebar], []},
   "cf": {:hex, :cf, "0.2.1", "69d0b1349fd4d7d4dc55b7f407d29d7a840bf9a1ef5af529f1ebe0ce153fc2ab", [:rebar3], []},
+  "edeliver": {:hex, :edeliver, "1.2.7", "76938c6296c5d52c7e31802bca39a10ea7d23b8d4ea1728d6149fb71fad475f2", [:mix], [{:exrm, ">= 0.16.0", [hex: :exrm, optional: false]}]},
   "erlport": {:git, "https://github.com/hdima/erlport.git", "246b7722d62b87b48be66d9a871509a537728962", []},
   "erlware_commons": {:hex, :erlware_commons, "0.19.0", "7b43caf2c91950c5f60dc20451e3c3afba44d3d4f7f27bcdc52469285a5a3e70", [:rebar3], [{:cf, "0.2.1", [hex: :cf, optional: false]}]},
   "exfswatch": {:hex, :exfswatch, "0.1.1", "7ccf6fc9b443d04dada3e50b21f910b4d0e4546ce7772dc6d4181fb929ea186f", [:mix], [{:fs, "~> 0.9", [hex: :fs, optional: false]}]},
