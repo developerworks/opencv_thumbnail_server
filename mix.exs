@@ -15,8 +15,16 @@ defmodule OpencvThumbnailServer.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     dev_packages = Mix.env == :dev && [:exsync, :apex] || []
-    [applications: [:logger, :poolboy, :erlport, :edeliver] ++ dev_packages,
-     mod: {OpencvThumbnailServer, []}]
+    [
+      applications: [
+        :logger,
+        :poolboy,
+        :erlport,
+        :edeliver,
+        :syn
+      ] ++ dev_packages,
+      mod: {OpencvThumbnailServer, []}
+    ]
   end
 
   # Dependencies can be Hex packages:
@@ -30,12 +38,13 @@ defmodule OpencvThumbnailServer.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:poolboy, "~> 1.5"},
-      {:erlport, github: "hdima/erlport"},
-      {:exsync, "~> 0.1.2", only: [:dev]},
       {:apex, "~> 0.4.0", only: [:dev]},
-      {:exrm, "~> 1.0.4"},
-      {:edeliver, ">= 1.2.7"}
+      {:edeliver, ">= 1.2.8"},
+      {:erlport, github: "hdima/erlport"},
+      {:exrm, "~> 1.0.5"},
+      {:exsync, "~> 0.1.2", only: [:dev]},
+      {:poolboy, "~> 1.5"},
+      {:syn, "~> 1.4"}
     ]
   end
 end
