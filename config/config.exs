@@ -22,3 +22,5 @@ config :opencv_thumbnail_server, settings: [
     max_overflow: 20
   ]}
 ]
+
+import_config "#{Mix.env}.exs"
