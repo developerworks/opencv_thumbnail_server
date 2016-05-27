@@ -4,7 +4,7 @@ defmodule OpencvThumbnailServer.Supervisor do
   @config Application.get_env :opencv_thumbnail_server, :settings
 
   def start_link() do
-    Supervisor.start_link(__MODULE__, [], name: {:global,__MODULE__})
+    Supervisor.start_link(__MODULE__, [], name: __MODULE__)
   end
 
   def init([]) do
