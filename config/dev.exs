@@ -22,3 +22,9 @@ config :kernel, sync_nodes_optional: [
 ]
 
 config :kernel, sync_nodes_timeout: 10000
+
+config :kernel, global_groups: [{:opencv_thumbnail_server_group, [
+  :"node1@192.168.212.45",
+  :"node2@192.168.212.45",
+  :"node3@192.168.212.45"
+]}]
