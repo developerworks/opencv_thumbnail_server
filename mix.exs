@@ -21,7 +21,8 @@ defmodule OpencvThumbnailServer.Mixfile do
         :poolboy,
         :erlport,
         :edeliver,
-        :syn
+        :syn,
+        :runtime_tools
       ] ++ dev_packages,
       mod: {OpencvThumbnailServer, []}
     ]
