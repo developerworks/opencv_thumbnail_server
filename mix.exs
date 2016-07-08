@@ -43,6 +43,7 @@ defmodule OpencvThumbnailServer.Mixfile do
       {:edeliver, ">= 1.2.8"},
       {:erlport, github: "hdima/erlport"},
       {:exrm, "~> 1.0.5"},
+      {:exfswatch, "~> 0.1.1", override: true},
       {:exsync, "~> 0.1.2", only: [:dev]},
       {:poolboy, "~> 1.5"},
       {:syn, "~> 1.4"}
