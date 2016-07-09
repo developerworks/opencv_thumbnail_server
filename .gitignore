@@ -6,4 +6,4 @@ erl_crash.dump
 /rel
 *.py[cod]
 scp
-/.deliver
+/.deliver/releases
