@@ -15,5 +15,5 @@ PRODUCTION_USER="root" # local user at deploy hosts
 DELIVER_TO="/srv/telegram/deploy" # deploy directory on production hosts
 
 
-LINK_SYS_CONFIG=/srv/opencv_thumbnail_server/rel/sys.config
+#LINK_SYS_CONFIG=/srv/opencv_thumbnail_server/rel/sys.config
 LINK_VM_ARGS=/srv/opencv_thumbnail_server/rel/vm.args
