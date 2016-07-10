@@ -13,11 +13,12 @@ defmodule OpencvThumbnailServer.Worker do
   end
 
   def init(python_module) do
+    python_path = Application.app_dir(:opencv_thumbnail_server, "/priv") |> to_char_list
+    Logger.debug "python path: #{python_path}"
     {:ok, pid} = :python.start_link([
-      {:python_path, @config[:python_path]},
+      {:python_path, python_path},
       {:python, @config[:python]}
     ])
-    Logger.info "Start worker #{inspect pid}"
     state = {python_module, pid}
     {:ok, state}
   end

@@ -10,8 +10,6 @@ config :logger, :console,
 config :opencv_thumbnail_server, settings: [
   # Shoud not be the system python in OSX
   {:python, '/usr/local/bin/python'},
-  # Python module path use to find module
-  {:python_path, "/srv/telegram/deploy" |> Kernel.to_char_list},
   # Python module use to make thumbnail
   {:module_name, :main},
   # Poolboy configurations
