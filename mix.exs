@@ -40,7 +40,7 @@ defmodule OpencvThumbnailServer.Mixfile do
   defp deps do
     [
       {:apex, "~> 0.4.0", only: [:dev]},
-      {:edeliver, ">= 1.2.8"},
+      {:edeliver, ">= 1.2.10"},
       {:erlport, github: "hdima/erlport"},
       {:exrm, "~> 1.0.5"},
       {:exfswatch, "~> 0.1.1", override: true},
