@@ -39,11 +39,11 @@ defmodule OpencvThumbnailServer.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:apex, "~> 0.4.0", only: [:dev]},
+      {:apex, "~> 0.5.2", only: [:dev]},
       {:edeliver, ">= 1.2.10"},
       {:erlport, github: "hdima/erlport"},
       {:exrm, "~> 1.0.5"},
-      {:exfswatch, "~> 0.1.1", override: true},
+      {:exfswatch, "~> 0.2.1", override: true},
       {:exsync, "~> 0.1.2", only: [:dev]},
       {:poolboy, "~> 1.5"},
       {:syn, "~> 1.4"}
