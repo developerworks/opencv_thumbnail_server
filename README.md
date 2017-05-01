@@ -25,3 +25,6 @@ The project is in early development stage, there's no package available in hex. 
           [applications: [:opencv_thumbnail_server]]
         end
 
+## OpenCV Installation on Ubuntu
+
+http://www.mobileway.net/2015/02/14/install-opencv-for-python-on-mac-os-x/
