@@ -14,16 +14,18 @@ iex> OpencvThumbnailServer.Api.get_dimension(data)
 The project is in early development stage, there's no package available in hex. you must install the deps with git repo.
 
   1. Add opencv_thumbnail_server to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:opencv_thumbnail_server, github: "developerworks/opencv_thumbnail_server"}]
-        end
-
+  ```
+  def deps do
+    [{:opencv_thumbnail_server, github: "developerworks/opencv_thumbnail_server"}]
+  end
+  ```
   2. Ensure opencv_thumbnail_server is started before your application:
 
-        def application do
-          [applications: [:opencv_thumbnail_server]]
-        end
+  ```
+  def application do
+    [applications: [:opencv_thumbnail_server]]
+  end
+  ````
 
 ## OpenCV Installation on Ubuntu
 http://www.pyimagesearch.com/2015/06/22/install-opencv-3-0-and-python-2-7-on-ubuntu/
