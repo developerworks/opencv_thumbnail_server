@@ -26,5 +26,7 @@ The project is in early development stage, there's no package available in hex. 
         end
 
 ## OpenCV Installation on Ubuntu
+http://www.pyimagesearch.com/2015/06/22/install-opencv-3-0-and-python-2-7-on-ubuntu/
 
+## OpenCV Installation on Mac OSX
 http://www.mobileway.net/2015/02/14/install-opencv-for-python-on-mac-os-x/
